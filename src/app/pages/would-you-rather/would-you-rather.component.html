@@ -1,0 +1,30 @@
+<h1>GAME NIGHT</h1>
+<div class="container" *ngIf="acknowledged">
+  <section class="header">
+    <div class="icon-container">
+      <i class="fa-solid fa-question"></i>
+    </div>
+    <!-- <p>Carta numero {{ cardNumber + 1 }}</p> -->
+  </section>
+  <section class="body">
+    <div class="loading" *ngIf="loading && !error else promptData">
+      <p>Caricamento...</p>
+      <i class="fa-solid fa-circle-notch fa-spin"></i>
+    </div>
+    <ng-template #promptData>
+      <p>{{ currentPrompt?.data }}</p>
+      <p *ngIf="error">C'è stato un Errore</p>
+    </ng-template>
+  </section>
+  <span>
+    <a (click)="nextPrompt()" class="myButton">Prossimo</a>
+    <a routerLink="/" class="myButton2">Home</a>
+  </span>
+</div>
+
+<div class="modal" *ngIf="!acknowledged">
+  <h1>ATTENZIONE</h1>
+  <p>Questa sezione della piattaforma necessita di Internet per funzionare. Inoltre, sfrutta banche dati straniere,
+    per cui le domande sono riportate in Inglese</p>
+  <button class="myButton2" (click)="setAck()">Capito</button>
+</div>

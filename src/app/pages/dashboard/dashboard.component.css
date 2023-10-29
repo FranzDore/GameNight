@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+p {
+  text-align: center;
+  margin-top: 4px;
+}
+
+/* Buttons of game modes */
+
+.button {
+  text-align: center;
+  border-radius: 20px;
+  padding: 25px 30px;
+  margin: 25px 40px;
+  cursor: pointer;
+}
+
+.button > a {
+  text-decoration: none;
+}
+
+.tod {
+  border: 3px solid red;
+}
+
+.pb {
+  border: 3px solid green;
+}
+
+.pn {
+  border: 3px solid blue;
+}
+
+.wyr {
+  border: 3px solid yellow;
+}

@@ -1,0 +1,18 @@
+<h1>GAME NIGHT</h1>
+<div class="container">
+  <div class="header">
+    <div class="icon-container">
+      <span class="material-symbols-outlined">touch_app</span>
+    </div>
+    <p>Carta numero {{ cardNumber + 1 }} di {{ total }}</p>
+  </div>
+  <div class="body">
+    <p>{{granted}}</p>
+    <h2>PERÒ</h2>
+    <p>{{condition}}</p>
+  </div>
+  <span>
+    <a (click)="renderNextPrompt()" class="myButton">Prossimo</a>
+    <a routerLink="/" class="myButton2">Home</a>
+  </span>
+</div>

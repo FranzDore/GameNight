@@ -1,0 +1,17 @@
+<h1>GAME NIGHT</h1>
+<h3>Benvenuti su Game Night!</h3>
+<p>Scegliete la modalità di gioco</p>
+<div class="container">
+  <div routerLink="/truthordare" [ngClass]="['button', 'tod']" *ngIf="false"> <!--TODO: To develop-->
+    <a>OBBLIGO O VERITA'</a>
+  </div>
+  <div routerLink="/pressthebutton" [ngClass]="['button', 'pb']">
+    <a>PREMERESTI IL BOTTONE?</a>
+  </div>
+  <div routerLink="/pensierinotturni" [ngClass]="['button', 'pn']">
+    <a>PENSIERI NOTTURNI</a>
+  </div>
+  <div routerLink="/wouldyourather" [ngClass]="['button', 'wyr']">
+    <a>WOULD YOU RATHER</a>
+  </div>
+</div>
