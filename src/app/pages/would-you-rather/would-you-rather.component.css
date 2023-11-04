@@ -40,10 +40,21 @@ a {
   margin: 5px;
 }
 
+/* Modal */
+
+.contered{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
 .modal {
-  top: 25%;
-  display: block;
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   z-index: 999;
   background-color: #000000;
   border-radius: 20px;
