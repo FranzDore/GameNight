@@ -21,13 +21,19 @@ export class PensieriNotturniComponent {
     this.renderNextPrompt();
   }
 
-  nextPrompt(): ThoughtPrompt {
+  randomPrompt(): ThoughtPrompt {
     return this.pensieriService.getRandomThought();
   }
 
   renderNextPrompt(): void {
-    let startingPrompt = this.nextPrompt();
-    this.currentPrompt = startingPrompt.data;
-    this.cardNumber = startingPrompt.id;
+    const prompt = this.randomPrompt();
+    this.currentPrompt = prompt.data;
+    this.cardNumber = prompt.id;
+  }
+
+  chooseById(id: number) {
+    const prompt = this.pensieriService.getThoughtById(id);
+    this.currentPrompt = prompt.data;
+    this.cardNumber = prompt.id;
   }
 }

@@ -22,6 +22,7 @@ html {
 	font-size:15px;
 	padding:13px 13px;
 	text-decoration:none;
+  border: 0;
 }
 
 .myButton:active {
@@ -35,13 +36,29 @@ html {
 	border-radius:14px;
 	display:inline-block;
 	cursor:pointer;
-	color:#000000;
+	color: black;
 	font-size:15px;
 	padding:13px 13px;
 	text-decoration:none;
+  border: 0;
 }
 
 .myButton2:active {
 	position:relative;
 	top:1px;
+}
+
+.myButton2 > i {
+  color: black;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+
+}
+
+#buttons > * {
+  flex-grow: 1;
 }

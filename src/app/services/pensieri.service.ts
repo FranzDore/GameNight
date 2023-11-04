@@ -10,9 +10,13 @@ export interface ThoughtPrompt {
   providedIn: 'root',
 })
 export class PensieriService {
-  public getRandomThought(): { id: number; data: string } {
+  public getRandomThought(): ThoughtPrompt {
     let choice = Math.floor(Math.random() * prompts.length);
     return { id: choice, data: prompts[choice] };
+  }
+
+  public getThoughtById(id: number): ThoughtPrompt {
+    return {id: id, data: prompts[id]}
   }
 
   public getTotal() {

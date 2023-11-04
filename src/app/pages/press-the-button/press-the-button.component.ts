@@ -33,4 +33,11 @@ export class PressTheButtonComponent implements OnInit {
     this.condition = startingPrompt.data.cons;
     this.cardNumber = startingPrompt.id;
   }
+
+  chooseById(id: number) {
+    const prompt = this.pressTheButtonService.getPromptById(id);
+    this.granted = prompt.data.pros;
+    this.condition = prompt.data.cons;
+    this.cardNumber = prompt.id;
+  }
 }

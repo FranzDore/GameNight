@@ -11,8 +11,10 @@
     <h2>PERÒ</h2>
     <p>{{condition}}</p>
   </div>
-  <span>
-    <a (click)="renderNextPrompt()" class="myButton">Prossimo</a>
-    <a routerLink="/" class="myButton2">Home</a>
-  </span>
+  <div id="buttons">
+    <button (click)="chooseById(cardNumber - 1)" class="myButton"><i class="fa-solid fa-arrow-left"></i></button>
+    <button routerLink="/" class="myButton2"><i class="fa-solid fa-house"></i></button>
+    <button (click)="renderNextPrompt()" class="myButton2"><i class="fa-solid fa-shuffle"></i></button>
+    <button (click)="chooseById(cardNumber + 1)" class="myButton"><i class="fa-solid fa-arrow-right"></i></button>
+  </div>
 </div>

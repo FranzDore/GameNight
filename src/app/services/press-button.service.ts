@@ -16,6 +16,10 @@ export class PressButtonService {
     return { id: choice, data: prompts[choice] };
   }
 
+  public getPromptById(id: number): {id: number; data: ButtonPrompt} {
+    return { id: id, data: prompts[id] };
+  }
+
   public getTotal() {
     return prompts.length;
   }
