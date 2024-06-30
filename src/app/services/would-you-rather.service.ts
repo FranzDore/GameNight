@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class WouldYouRatherService {
 
-  private apiUrl: string = 'https://would-you-rather-api.abaanshanid.repl.co/'
+  private readonly apiUrl: string = 'https://would-you-rather-api.abaanshanid.repl.co/'
 
   constructor(private http: HttpClient) { }
 

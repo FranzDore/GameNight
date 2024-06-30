@@ -16,7 +16,11 @@ export class PensieriService {
   }
 
   public getThoughtById(id: number): ThoughtPrompt {
-    return {id: id, data: prompts[id]}
+    return {
+      id: id < 0 ? prompts.length - 1 : id % prompts.length,
+      data:
+        id <= 0 ? prompts[prompts.length - 1] : prompts[id % prompts.length],
+    };
   }
 
   public getTotal() {

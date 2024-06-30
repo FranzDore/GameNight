@@ -32,18 +32,6 @@ export const prompts: { pros: string; cons: string }[] = [
     cons: 'Ti odia',
   },
   {
-    pros: 'Diventi un influencer su TikTok',
-    cons: 'Hai la notorietà di Napo',
-  },
-  {
-    pros: 'Ottieni il Death Note',
-    cons: 'Diventi il nuovo Kira, impazzisci e commetti stragi',
-  },
-  {
-    pros: 'Fai un viaggio ad Hiroshima',
-    cons: 'Sono le 8:15 del 6 Agosto 1945',
-  },
-  {
     pros: 'Avrai sempre un sorriso smagliante e un alito fresco',
     cons: 'Ogni cosa che mangi o bevi sà di come quando ti sei appena lavato i denti, soprattutto il succo d\'arancia',
   },
@@ -66,10 +54,6 @@ export const prompts: { pros: string; cons: string }[] = [
   {
     pros: 'Diventi immortale a tutti gli effetti',
     cons: 'Senti comunque il dolore delle ferite che ti vengono provocate',
-  },
-  {
-    pros: 'Hai internet illimitato dovunque tu sia',
-    cons: 'Hai WIND',
   },
   {
     pros: 'Hai la possibilità di esplorare lo spazio',
